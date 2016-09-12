@@ -1,34 +1,38 @@
-{% extends "layout_guidance.html" %}
+{% extends "layout.html" %}
 
 {% block page_title %}
-  Pattern: check before you start
+  Product: GOV.UK Frontend
 {% endblock %}
 
 {% block content %}
 
 <main id="content" role="main">
 
-{% include "includes/phase_banner_alpha.html" %}
+<div class="breadcrumbs">
+  <ol>
+    <li>
+      <a href="#">service manual</a>
+    </li>
+    <li>
+      <a href="#">shared products</a>
+    </li>
+    <li>
+      GOV.UK Frontend
+    </li> 
+  </ol>
+</div>
 
 <div class="grid-row">
     <div class="column-two-thirds">
 
-      <h1 class="heading-xlarge"><span class="design-pattern">Pattern
-      <br></span>Check before you start
+      <h1 class="heading-xlarge"><span class="design-pattern">Product
+      <br></span>GOV.UK Frontend
       </h1>
-
-      <p class="lede">
-      Help users understand whether they should use your service before they start, so that they don’t waste time and effort.
-      </p>
-
-      <p class="lede">
-      If you do this well, you’ll improve user satisfaction and reduce unnecessary calls and applications to your service team.
-      </p>
 
     <br>
 
     <p class="design-update">
-    Last updated: 5 July 2016
+      Last updated: two weeks ago
     </h3>
 
     <br>
@@ -40,156 +44,69 @@
 <div class="grid-row">
     <div class="column-one-third">
 
-  <ol class="list list-bullet pattern_nav">
-    <li><a href="#1">meet user needs</a></li>
-    <li><a href="#2">save time and money</a></li>
-    <li><a href="#3">replace features in your service</a></li>
-    <li><a href="#4">try an example of this pattern</a></li>
-    <li><a href="#5">other services using this pattern</a></li>
-    <li><a href="#6">feedback</a></li>
-    <!--
-    <li><a href="#6">measuring how it's working</a></li>
-    <li><a href="#7">check before start in your service</a></li>
-    -->
-  </ol>
+      <p class="bold">Page contents:</p>
 
-  </div>
+      <ol class="list list-bullet pattern_nav">
+        <li><a href="#1">what GOV.UK Frontend is</a></li>
+        <li><a href="#2">why you should use GOV.UK Frontend</a></li>
+        <li><a href="#3">getting started</a></li>
+        <li><a href="#4">documentation</a></li>
+        <li><a href="#5">contact product team</a></li>
+      </ol>
 
-  <div class="column-two-thirds">
+      </div>
 
-  <h3 class="heading-medium" id="1" style="margin-top: 0px;">Meet user needs</h3>
+      <div class="column-two-thirds">
 
-  <p>Before using a service users might need to know:</p>
+      <h3 class="heading-medium" id="1" style="margin-top: 0px;">What GOV.UK Frontend is</h3>
 
-  <ul class="list list-bullet">
-    <li>what they need to do to meet their need, eg apply for a conditional licence so they can learn to drive</li>
-    <li>what rules they must follow, eg planning permission</li>
-    <li>if they have to use a service, eg drivers medical</li>
-    <li>if they can apply, eg carers allowance</li>
-    <li>how much it'll cost, eg firearm licence </li>
-  </ul>
+      <p> 
+        GOV.UK Frontend is a way to build a service that looks and works like GOV.UK
+      </p>
 
-  <hr>
+      <hr>
 
-  <h3 class="heading-medium" id="1">Save time and money</h3>
+      <h3 class="heading-medium" id="1">Why you should use GOV.UK Frontend</h3>
 
-  <p>You may have problems with your service, eg failure demand, including the following:</p>
+      <p>You should use GOV.UK Frotend because it makes it simpler, faster, easier to build services that meet user needs. It also means you can:</p>
 
-  <p>You may get calls from users asking:</p>
+      <ul class="list list-bullet">
+        <li>meet GOV.UK standard</li>
+        <li>use code that is supported</li>
+        <li>spend less time on maintaining existing code</li>
+      </ul>
 
-  <ul class="list list-bullet">
-    <li>how to do a thing, eg apply, register</li>
-    <li>what they need to do, eg fill in a form, visit a post office, pay money</li>
-    <li>when they need to do specific things, eg phoning before filling in a form</li>
-    <li>what rules apply to their situation, eg if they're applying for a visa from outside the EEA and EU</li>
-    <li>which forms they might need</li>
-    <li>what information do they put in a form</li>
-  </ul>
+      <hr>
 
-  <p>You might be processing applications from users who:</p>
+      <h3 class="heading-medium" id="3">Getting started</h3>
 
-  <ul class="list list-bullet">
-    <li>don't need to apply</li>
-    <li>aren't ready to apply</li>
-    <li>aren't eligible</li>
-  </ul>
+      <p><a href="#">Download GOV.UK Frontend code</a></p>
 
-  <p>You might also have users who:</p>
+      <p><a href="#">Steps to get code running</a></p>
 
-  <ul class="list list-bullet">
-    <li>fill in the wrong form accidently</li>
-    <li>break the rules because they don't understand what they have to do</li>
-  </ul>
+      <hr>
 
-  <hr>
+      <h3 class="heading-medium" id="4">Documentation</h3>
 
-  <h3 class="heading-medium" id="3">Replace features in your service</h3>
+      <p><a href="#">View documentaton for GOV.UK Frontend</a></p>
 
-  <p>You can use this pattern to replace features so you can improve your service.</p>
+      <p>Documentation includes:</p>
 
-  <p>Features you might want to replace could include:</p>
+      <ul class="list list-bullet">
+        <li>commands to get the code running</li>
+        <li>how to run tests with the code</li>
+        <li>code structure</li>
+      </ul>
 
-  <ul class="list list-bullet">
-    <li>phone calls with users helping them prepare applications, also known as "pre app chats"</li>
-    <li>lots of instructions on how to fill in a form</li>
-    <li>conditions split over multiple documents</li>
-  </ul>
+      <hr>
 
-  <hr>
+      <h3 class="heading-medium" id="5">Contact product team</h3>
 
-  <h3 class="heading-medium" id="4">Try an example of this pattern</h3>
+      <p>GOV.UK Frontend is built and supported by a full time team at GDS.</p>
 
-  <p>You can try an example of a <a href="/start-page">check before you start prototype</a>.</p>
+      <p>To contact the team email:</p>
 
-  <hr>
-
-  <h3 class="heading-medium" id="5">See how other services have used this pattern</h3>
-
-  <p>Live:</p>
-
-  <ul class="list list-bullet">
-    <li><a href="https://www.gov.uk/carers-allowance/how-to-claim">Carer's allowance</a>, DWP</li>
-    <li><a href="https://www.gov.uk/register-to-vote">Register to vote</a>, CO</li>
-  </ul>
-
-  <p>Beta:</p>
-
-  <ul class="list list-bullet">
-    <li>Renew passport, HO</li>
-    <li>Fitness to drive, DVLA</li>
-    <!--
-    <li><a href="#">Marriage allowance</a>, HMRC</li>
-    <li><a href="#">Renew passport</a>, HO</li>
-    <li><a href="#">Tax credits</a>, HMRC</li>
-    <li><a href="#">Apply for a budgeting loan</a>, DWP</li>
-    -->
-  </ul>
-
-  <p>Alpha:</p>
-
-  <ul class="list list-bullet">
-    <li>Child benefit, HMRC</li>
-    <li>Export licensing, BIS</li>
-    <!--
-    <li><a href="#">Flood activity permits</a>, DEFRA</li>
-    -->
-  </ul>
-
-  <hr>
-
-  <h3 class="heading-medium" id="6">Feedback</h3>
-
-  <p>Feedback and discuss this pattern on its wiki <a href="https://designpatterns.hackpad.com/Check-before-you-start-YkLUWCvJamG">page.</a>
-
-  
-
-  <!--
-
-  <hr>
-
-  <h3 class="heading-medium" id="7">Check before start in your service</h3>
-
-  <p>The pattern is not a technology.</p>
-
-  <p>The pattern is practical guidance to design check before start for your service.</p>
-
-  <div class="panel panel-border-wide">
-      <p>
-        Involve the policy in the design of the check before start for your service
-    </p>
-  </div>
-
-    <p>
-      If possible make the policy as the same time, in a multidisciplinary team of designers, policy makers, content designers and user research.
-    </p>
-
-  <p><a href="/instructions">Step by step gudiance.</a></p>
-
-  <p>The template code can be downloaded from <a href="https://github.com/HarryTrimble/routing_questions_ea">GitHub</a>.</p>
-
-  <p>The pattern can also be a <a href="https://drive.google.com/a/digital.cabinet-office.gov.uk/file/d/0B_Oyjc6ZIrvRdXRnMVBaVWxhaXc/view?ts=5739bba0">phone script</a> for users with certain <a href="#"> support needs</p></a></p>
-
-  -->
+      <p>govuk-frontend@digital.cabinet-office.gov.uk</p>
 
     </div>
   </div>
