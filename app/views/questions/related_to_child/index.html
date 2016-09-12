@@ -1,0 +1,46 @@
+{% extends "layout.html" %} {% block page_title %} Example - Forms {% endblock %} {% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form method="get" action="/questions/child_age" class="form">
+
+      {{formData | safe}}
+
+        <h1 class="heading-large">
+          Are you related to the children?
+        </h1>
+
+        <fieldset>
+          <legend class="visuallyhidden">
+            Are you related to the children?
+          </legend>
+
+          <div class="form-group">
+            <label for="related_to_child-1" class="block-label">
+              <input type="radio" id="related_to_child-1" name="related_to_child" value="yes">
+              Yes
+            </label>
+
+            <label for="related_to_child-2" class="block-label">
+              <input type="radio" id="related_to_child-2" name="related_to_child" value="no">
+              No
+            </label>
+
+          </div>
+
+        </fieldset>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue" />
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+</main>
+{% endblock %}

@@ -1,0 +1,76 @@
+// Import GOV.UK elements, this will import the frontend toolkit and some base styles.
+// Take a look in _govuk-elements.scss to see which files are imported.
+@import 'govuk-elements';
+
+// Take a look at patterns.scss to see which files are imported.
+@import 'patterns';
+
+// If you need to create a page as part of your journey, but without GOV.UK branding
+// See localhost:3000/examples/unbranded/
+.unbranded {
+  background: $white;
+  // Use the universal selector and !important to *ALWAYS OVERRIDE* GDS Transport
+  * {
+    font-family: Arial !important;
+  }
+  // Remove GOV.UK footer styles
+  #footer {
+    border: 0;
+    background: $white;
+  }
+}
+
+// Related items
+// (These styles will be moved to GOV.UK elements, duplicating here for now.)
+.govuk-related-items {
+  margin-top: $gutter;
+  border-top: 10px solid $govuk-blue;
+  padding-top: 5px;
+
+  .heading-medium {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em
+  }
+
+  li {
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+}
+
+// Let's override the phase banner and make it black
+.phase-banner-beta .phase-tag {
+  background: black !important;
+}
+
+// Let's override the phase banner and make it alpha pink (sorry)
+.phase-banner-alpha .phase-tag {
+  background: #D53880 !important;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+// Guidance styling
+
+.pattern_nav li {
+  font-size: 16px;
+}
+
+.design-pattern {
+  font-size: 24px;
+  line-height: 1.1111111111;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  display: block;
+  color: #6f777b;
+}
+
+// Hide Crown
+
+.header-logo img {
+  display: none;
+}

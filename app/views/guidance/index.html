@@ -1,0 +1,227 @@
+{% extends "layout_guidance.html" %}
+
+{% block page_title %}
+  Design pattern: check before start
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+
+		  <h1 class="heading-xlarge"><span class="design-pattern">Design pattern
+		  <br></span>Check before you start
+		  </h1>
+
+	    <p class="lede">
+			Help users understand whether they should use your service before they start, so that they don’t waste time and effort
+	    </p>
+
+	    <p class="lede">
+			If you do this well, you’ll improve user satisfaction and reduce unnecessary calls and applications to your service team.
+	    </p>
+
+		<br>
+
+		<p class="design-update">
+		Last updated: 29 June 2016
+		</h3>
+
+		<br>
+		<br>
+
+	</div>
+</div>
+
+<div class="grid-row">
+    <div class="column-one-third">
+
+	<ol class="list list-bullet pattern_nav">
+		<li><a href="#1">save time and money</a></li>
+		<li><a href="#2">meet user needs</a></li>
+		<li><a href="#3">replace features in your service</a></li>
+		<li><a href="#4">try an example of this pattern</a></li>
+		<li><a href="#5">other services using this pattern</a></li>
+		<!--
+		<li><a href="#6">measuring how it's working</a></li>
+		<li><a href="#7">check before start in your service</a></li>
+		-->
+	</ol>
+	
+	</div>
+
+	<div class="column-two-thirds">
+
+	<h3 class="heading-medium" id="1" style="margin-top: 0px;">Save time and money</h3>
+
+	<p>You may have problems with your service, eg failure demand, including the following:</p>
+
+	<p>You may get calls from users asking:</p>
+
+	<ul class="list list-bullet">
+		<li>how to do a thing, eg apply, register</li>
+		<li>what they need to do, eg fill in a form, visit a post office, pay money</li>
+		<li>when they need to do specific things, eg phoning before filling in a form</li>
+		<li>what rules apply to their situation, eg if they're applying for a visa from outside the EEA and EU</li>
+		<li>which forms they might need</li>
+		<li>what information do they put in a form</li>
+	</ul>
+
+	<p>You might be processing applications from users who:</p>
+
+	<ul class="list list-bullet">
+		<li>don't need to apply</li>
+		<li>aren't ready to apply</li>
+		<li>aren't eligible</li>
+	</ul>
+
+	<p>You might also have users who:</p>
+
+	<ul class="list list-bullet">
+		<li>fill in the wrong form accidently</li>
+		<li>break the rules because they don't understand what they have to do</li>
+	</ul>
+
+	<hr>
+
+	<h3 class="heading-medium" id="2">Meet user needs</h3>
+
+	<p>Before using a transaction users might need to know:</p>
+
+	<ul class="list list-bullet">
+		<li>what they need to do to meet their need, eg apply for a conditional licence so they can learn to drive</li>
+		<li>what rules they must follow, eg planning permission</li>
+		<li>if they have to use a service, eg drivers medical</li>
+		<li>if they can apply, eg carers allowance</li>
+		<li>how much it'll cost, eg firearm licence </li>
+	</ul>
+
+	<hr>
+
+	<h3 class="heading-medium" id="3">Replace features in your service</h3>
+
+	<p>You can use this pattern to replace features so you can improve your service.</p>
+
+	<p>Features you might want to replace could include:</p>
+
+	<ul class="list list-bullet">
+		<li>phone calls with users helping them prepare applications, also known as "pre app chats"</li>
+		<li>lots of instructions on how to fill in a form</li>
+		<li>conditions split over multiple documents</li>
+	</ul>
+
+	<hr>
+
+	<h3 class="heading-medium" id="4">Try an example of this pattern</h3>
+
+	<p>You can try an example of a <a href="/">check before you start prototype</a>.</p>
+
+	<hr>
+
+	<h3 class="heading-medium" id="5">See how other services have used this pattern</h3>
+
+	<p>Live:</p>
+
+	<ul class="list list-bullet">
+		<li><a href="https://www.gov.uk/carers-allowance/how-to-claim">Carer's allowance</a>, DWP</li>
+		<li><a href="https://www.gov.uk/register-to-vote">Register to vote</a>, CO</li>
+	</ul>
+
+	<p>Beta:</p>
+
+	<ul class="list list-bullet">
+		<li><a href="#">Renew passport</a>, HO</li>	
+		<li><a href="#">Fitness to drive</a>, DVLA</li>
+		<!--
+		<li><a href="#">Marriage allowance</a>, HMRC</li>
+		<li><a href="#">Renew passport</a>, HO</li>
+		<li><a href="#">Tax credits</a>, HMRC</li>
+		<li><a href="#">Apply for a budgeting loan</a>, DWP</li>
+		-->			
+	</ul>
+
+	<p>Alpha:</p>
+
+	<ul class="list list-bullet">
+		<li><a href="#">Child benefit</a>, HMRC</li>
+		<li><a href="#">Export licensing</a>, BIS</li>
+		<!--	
+		<li><a href="#">Flood activity permits</a>, DEFRA</li>
+		-->			
+	</ul>
+
+	<!--
+
+	<hr>
+
+	<h3 class="heading-medium" id="6">Measuring how it's working</h3>
+
+	<p>Monitoring the performance of a pattern is essential: it allows the service teams using it or considering to, to know how well it works for their users and government.
+
+	<p>Calls:</p>
+
+	<ul class="list list-bullet">
+		<li>% to ask what rules apply to them</li>
+		<li>% to ask if they need to fill in a form</li>
+		<li>% to ask which forms they need to fill in</li>
+		<li>% ask what information they should put in a form</li>
+	</ul>
+
+	<p>Applications:</p>
+
+	<ul class="list list-bullet">
+		<li>number of unnecessary applications</li>
+		<li>number of ineligible application</li>
+	</ul>
+
+	<p>Enforcement</p>
+
+	<ul class="list list-bullet">
+		<li>number of interactions with users who filled out the wrong form</li>
+		<li>numner of interactions with users misunderstanding the rules, then breaking them unknowingly</li>
+	</ul>
+
+	<p>To work out the total cost in time and money, times the measure above by:</p>
+
+	<ul class="list list-bullet">
+		<li><a href="#">cost per call</a></li>
+		<li><a href="#">cost to process one application</a></li>
+		<li><a href="#">cost per enforcement interacton</a></li>
+	</ul>
+
+	<hr>
+
+	<h3 class="heading-medium" id="7">Check before start in your service</h3>
+
+	<p>The pattern is not a technology.</p> 
+
+	<p>The pattern is practical guidance to design check before start for your service.</p>
+
+	<div class="panel panel-border-wide">
+	    <p>
+	    	Involve the policy in the design of the check before start for your service 
+		</p>
+	</div>
+
+    <p>
+    	If possible make the policy as the same time, in a multidisciplinary team of designers, policy makers, content designers and user research.
+    </p>
+
+	<p><a href="/instructions">Step by step gudiance.</a></p>
+
+	<p>The template code can be downloaded from <a href="https://github.com/HarryTrimble/routing_questions_ea">GitHub</a>.</p>
+
+	<p>The pattern can also be a <a href="https://drive.google.com/a/digital.cabinet-office.gov.uk/file/d/0B_Oyjc6ZIrvRdXRnMVBaVWxhaXc/view?ts=5739bba0">phone script</a> for users with certain <a href="#"> support needs</p></a></p>
+
+	-->
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
+
+

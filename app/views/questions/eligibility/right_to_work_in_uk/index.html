@@ -1,0 +1,55 @@
+{% extends "layout.html" %} {% block page_title %} Example - Forms {% endblock %} {% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form method="get" action="/questions/eligibility/criminal_history" class="form">
+
+      {{formData | safe}}
+
+        <h1 class="heading-large">
+          Do you have the right to work in the UK?
+        </h1>
+
+        <p>
+          This includes British, EU, EEA, Swiss citizens and working visa holders.
+        </p>
+
+        <p>
+          Your right to work in the UK will checked before you can become a childminder.
+        </p>
+
+        <fieldset>
+          <legend class="visuallyhidden">
+            Are you 18 or over?
+          </legend>
+
+          <div class="form-group">
+
+            <label for="right_to_work-1" class="block-label">
+              <input type="radio" id="right_to_work-1" name="right_to_work" value="yes">
+              Yes
+            </label>
+
+            <label for="right_to_work-2" class="block-label">
+              <input type="radio" id="right_to_work-2" name="right_to_work" value="no">
+              No
+            </label>
+
+          </div>
+
+        </fieldset>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue" />
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+</main>
+{% endblock %}

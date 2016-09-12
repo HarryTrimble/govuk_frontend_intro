@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Check rules
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+{% include "includes/phase_banner_beta.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Check licence rules
+      </h1>
+
+      <p>Before applying, check the rules for when being a childminder</p>
+
+      <h3 class="heading-medium">You must:</h3>
+
+      <ul class="list list-bullet">
+        <li>pay an annual registration fee</li>
+        <li>pay an annual criminal check fee</li>
+        <li>keep records of children under your care</li>
+        <li>report accidents and incidents</li>
+        <li>report changes to premises, contact, staff and childcare hours</li>
+      </ul>
+
+      <h3 class="heading-medium">You can't:</h3>
+
+      <ul class="list list-bullet">
+        <li>live in the same place as someone else who is disqualified as a childminder</li>
+        <li class="">If you'll be looking after more than five children, it's required to be accompanied by another registered childminder</li>
+      </ul>
+
+      <h3 class="heading-medium">You can:</h3>
+
+      <ul class="list list-bullet">
+        <li>look after children under 5 years old</li>
+        {% if data.number_of_children | int > 5 %}
+          <li class="lede">look after up 4 children.</li>
+        {% endif %}
+      </ul>
+
+      <br>
+
+      <!--
+
+      <p>
+        <a class="button button-start" href="#" role="button">Apply now</a>
+      </p>
+
+      -->
+
+    </div>
+  </div>
+
+
+</main>
+{% endblock %}
