@@ -1952,3 +1952,12 @@ input[type=number] {
 .design-update {
   font-size: 14px;
 }
+
+#product-style {
+  background-color: #005EA5;
+  color: #ffffff;
+}
+
+#product-style a {
+  color: #ffffff;
+}
